@@ -1,0 +1,15 @@
+model Experience {
+  id           String    @id @default(uuid())
+  title        String
+  companyName  String    @map("company_name")
+  companyImage String?   @map("company_image")
+  location     String
+  startDate    String    @map("start_date")
+  endDate      String?   @map("end_date")
+  description  String
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+  deleteddAt   DateTime? @map("deleted_at")
+
+  @@map("experiences")
+}

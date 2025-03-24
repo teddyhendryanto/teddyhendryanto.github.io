@@ -1,0 +1,82 @@
+@import '~bootstrap/scss/functions';
+
+@mixin transitionEase($time: 0.3s) {
+  transition: all $time ease;
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -o-transition: all $time ease;
+  -ms-transition: all $time ease;
+}
+
+@mixin font($size: '') {
+  @if $size == 'h1' {
+    font-size: 5rem;
+    line-height: 88px;
+    letter-spacing: -4px;
+    font-weight: 400;
+  } @else if $size == 'h2' {
+    font-size: 3.812rem;
+    line-height: 79.3px;
+    letter-spacing: -2px;
+    font-weight: 400;
+  } @else if $size == 'h3' {
+    font-size: 2.938rem;
+    line-height: 61.1px;
+    letter-spacing: -2px;
+    font-weight: 400;
+  } @else if $size == 'h4' {
+    font-size: 2.25rem;
+    line-height: 46.8px;
+    letter-spacing: -1px;
+    font-weight: 400;
+  } @else if $size == 'h5' {
+    font-size: 1.688rem;
+    line-height: 35.1px;
+    letter-spacing: -1px;
+    font-weight: 400;
+  } @else if $size == 'h6' {
+    font-size: 1.312rem;
+    line-height: 27.3px;
+    letter-spacing: -1px;
+    font-weight: 400;
+  } @else if $size == 'body-xl' {
+    font-size: 1.938rem;
+    line-height: 40.3px;
+    font-weight: 400;
+  } @else if $size == 'body-lg' {
+    font-size: 1.562rem;
+    line-height: 32.5px;
+    font-weight: 400;
+  } @else if $size == 'body-md' {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+  } @else if $size == 'body-sm' {
+    font-size: 0.812rem;
+    line-height: 16.9px;
+    font-weight: 400;
+  } @else {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+@mixin lineclamp($lineheight, $lines) {
+  line-height: $lineheight !important;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin noselect() {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}

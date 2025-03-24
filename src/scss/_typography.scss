@@ -1,0 +1,65 @@
+.heading-1 {
+  @include font("h1");
+}
+
+.heading-2 {
+  @include font("h2");
+}
+
+.heading-3 {
+  @include font("h3");
+}
+
+.heading-4 {
+  @include font("h4");
+}
+
+.heading-5 {
+  @include font("h5");
+}
+
+.heading-6 {
+  @include font("h6");
+}
+
+.body-xl {
+  @include font("body-xl");
+}
+
+.body-lg {
+  @include font("body-lg");
+}
+
+.body-md {
+  @include font("body-md");
+}
+
+.body-sm {
+  @include font("body-sm");
+}
+
+.body-base {
+  @include font("body-base");
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6,
+.body-xl,
+.body-lg,
+.body-md,
+.body-sm,
+.body-base {
+  * {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+  }
+
+  strong {
+    font-weight: 700 !important;
+  }
+}

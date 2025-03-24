@@ -1,0 +1,12 @@
+{
+  "diffEditor.experimental.showMoves": true,
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",
+    "source.fixAll.eslint",
+    "source.organizeImports"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "terminal.integrated.env.osx": {}
+}

@@ -1,0 +1,10 @@
+model Skill {
+  id         String    @id @default(uuid())
+  name       String    @unique
+  imageUrl   String?   @map("image_url")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+  deleteddAt DateTime? @map("deleted_at")
+
+  @@map("skills")
+}
