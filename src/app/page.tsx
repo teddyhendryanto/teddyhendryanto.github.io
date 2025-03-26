@@ -136,9 +136,10 @@ const Home = async () => {
                           <small className="body-sm">
                             {experience.startDate} - {experience.endDate}
                           </small>
-                          <h5>
+                          <h5 className="mb-0">
                             {experience.title} | {experience.companyName}
                           </h5>
+                          <h6 className="body-base">{experience.location}</h6>
                           <div dangerouslySetInnerHTML={{ __html: experience.description }} />
                         </div>
                       </div>
