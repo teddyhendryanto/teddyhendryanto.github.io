@@ -183,7 +183,7 @@ async function runCustomMigration() {
       },
       {
         companyName: 'PT. MULTIBOX INDAH',
-        companyImage: '/collections/experiences/pt-multibox-indah.jpeg',
+        companyImage: '/collections/companies/pt-multibox-indah.jpeg',
         location: 'Tangerang, Indonesia',
         startDate: 'October 2013',
         endDate: 'May 2018',

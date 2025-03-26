@@ -1,0 +1,14 @@
+model Work {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  description String?
+  tags        String    @map("tags")
+  imageUrl    String?   @map("image_url")
+  externalUrl String?   @map("external_url")
+  period      String?
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  deleteddAt  DateTime? @map("deleted_at")
+
+  @@map("works")
+}

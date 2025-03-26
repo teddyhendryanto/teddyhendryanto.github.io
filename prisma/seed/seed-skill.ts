@@ -8,23 +8,23 @@ async function runCustomMigration() {
       { name: 'JavaScript', imageUrl: '/collections/skills/javascript.png' },
       { name: 'TypeScript', imageUrl: '/collections/skills/typescript.png' },
       { name: 'NestJS', imageUrl: '/collections/skills/nestjs.png' },
-      { name: 'Go', imageUrl: '/collections/skills/go.png' }, // TODO: Add image
-      { name: 'GraphQL', imageUrl: '/collections/skills/graphql.png' }, // TODO: Add image
-      { name: 'REST', imageUrl: '/collections/skills/rest.png' }, // TODO: Add image
-      { name: 'Redis', imageUrl: '/collections/skills/redis.png' }, // TODO: Add image
-      { name: 'MySQL', imageUrl: '/collections/skills/mysql.png' }, // TODO: Add image
+      { name: 'Go', imageUrl: '/collections/skills/go.png' },
+      { name: 'GraphQL', imageUrl: '/collections/skills/graphql.png' },
+      { name: 'REST', imageUrl: '/collections/skills/rest.png' },
+      { name: 'Redis', imageUrl: '/collections/skills/redis.png' },
+      { name: 'MySQL', imageUrl: '/collections/skills/mysql.png' },
       { name: 'MongoDB', imageUrl: '/collections/skills/mongodb.png' },
       { name: 'PostgreSQL', imageUrl: '/collections/skills/postgresql.png' },
-      { name: 'PHP-Laravel', imageUrl: '/collections/skills/php-laravel.png' }, // TODO: Add image
+      { name: 'PHP-Laravel', imageUrl: '/collections/skills/laravel.png' },
       { name: 'Git', imageUrl: '/collections/skills/git.png' },
-      { name: 'Google Pub/Sub', imageUrl: '/collections/skills/google-pubsub.png' }, // TODO: Add image
-      { name: 'Kafka', imageUrl: '/collections/skills/kafka.png' }, // TODO: Add image
-      { name: 'RabbitMQ', imageUrl: '/collections/skills/rabbitmq.png' }, // TODO: Add image
-      { name: 'Bootstrap', imageUrl: '/collections/skills/bootstrap.png' }, // TODO: Add image
-      { name: 'Tailwind CSS', imageUrl: '/collections/skills/tailwind-css.png' }, // TODO: Add image
+      { name: 'Google Pub/Sub', imageUrl: '/collections/skills/google-pubsub.png' },
+      { name: 'Kafka', imageUrl: '/collections/skills/kafka.png' },
+      { name: 'RabbitMQ', imageUrl: '/collections/skills/rabbitmq.png' },
+      { name: 'Bootstrap', imageUrl: '/collections/skills/bootstrap.png' },
+      { name: 'Tailwind CSS', imageUrl: '/collections/skills/tailwind.png' },
       { name: 'React', imageUrl: '/collections/skills/react.png' },
       { name: 'Next.js', imageUrl: '/collections/skills/nextjs.png' },
-      { name: 'React Native', imageUrl: '/collections/skills/react-native.png' }, // TODO: Add image
+      { name: 'React Native', imageUrl: '/collections/skills/react-native.png' },
     ],
   });
 
