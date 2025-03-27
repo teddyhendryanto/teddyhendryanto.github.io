@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  DATABASE_URL: ${{ vars.DATABASE_URL }}
+
 jobs:
   deploy:
     environment:
@@ -17,6 +20,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up environment variables
+        run: echo "DATABASE_URL=${{ vars.DATABASE_URL }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: npm install
