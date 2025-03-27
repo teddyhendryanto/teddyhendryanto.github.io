@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export', // Required for static export
+  images: {
+    unoptimized: true, // GitHub Pages does not support Image Optimization
+  },
 };
 
 export default nextConfig;
