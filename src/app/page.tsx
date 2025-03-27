@@ -71,8 +71,9 @@ const Home = async () => {
               </Col>
               <Col xs={12} md={4} className="align-self-center">
                 <Image
+                  priority
                   src={`/collections/profile/image.jpg`}
-                  alt="teddy hendryanto"
+                  alt="Teddy Hendryanto - Software Engineer"
                   width={300}
                   height={400}
                   className="rounded-4 img-fluid"
@@ -95,6 +96,7 @@ const Home = async () => {
                     className="d-flex flex-column align-items-center gap-10px"
                     style={{ width: 100 }}>
                     <Image
+                      priority
                       src={skill.imageUrl as string}
                       alt={skill.name}
                       width={64}
@@ -126,6 +128,7 @@ const Home = async () => {
                           'p-5',
                         )}>
                         <Image
+                          priority
                           src={experience.companyImage as string}
                           alt={experience.companyName}
                           width={96}
@@ -168,6 +171,7 @@ const Home = async () => {
                             xl={6}
                             className="d-flex align-self-center justify-content-center bg-gray-200 p-5">
                             <Image
+                              priority
                               src={work.imageUrl as string}
                               width={512}
                               height={288}

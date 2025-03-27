@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <div className="d-flex flex-column justify-content-center">
           <div className="body-sm">
-            © Copyright {moment().format('YYYY')} teddyhendryanto. All rights reserved.
+            © {moment().format('YYYY')} teddyhendryanto. All rights reserved.
           </div>
         </div>
       </Container>

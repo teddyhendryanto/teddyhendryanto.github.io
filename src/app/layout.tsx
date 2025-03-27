@@ -12,6 +12,12 @@ const poppinSans = Poppins({
 export const metadata: Metadata = {
   title: 'Teddy Hendryanto',
   description: 'Teddy Hendryanto - Software Engineer - Jakarta, Indonesia',
+  openGraph: {
+    title: 'Teddy Hendryanto - Software Engineer - Jakarta, Indonesia',
+    description: 'Portfolio showcasing projects, skills, and contact details.',
+    images: ['/og-image.png'],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
