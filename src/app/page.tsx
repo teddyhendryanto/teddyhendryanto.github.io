@@ -20,7 +20,9 @@ const cx = classNames.bind(styles);
 const Home = async () => {
   const skills = await prisma.skill.findMany();
   const experiences = await prisma.experience.findMany();
-  const works = await prisma.work.findMany();
+  const works = await prisma.work.findMany({
+    orderBy: { createdAt: 'desc' },
+  });
 
   return (
     <MainLayout>
@@ -45,7 +47,7 @@ const Home = async () => {
                   <div className="d-flex flex-column gap-20px">
                     <div className="d-flex gap-10px">
                       <MapPin />
-                      <p>Jakarta, Indonesia</p>
+                      <p>Tangerang, Indonesia</p>
                     </div>
                     <div className="d-flex gap-10px">
                       <CircleCheck color="#10B981" />
